@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container col-lg-6"></div>
+    <form  method ="POST">{% csrf_token %}
+      <div class="form-group">
+        <input
+          type="float"
+          id="float"
+           name="b"
+          placeholder="Enter your name"
+        />
+        
+      </div>
+      <br>
+      <button type="submit" >Submit</button>
+      {% if a %}<h1>{{ a }}</h1>
+      {% endif %}
+    </form>
+  </body>
+</html>
